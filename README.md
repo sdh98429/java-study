@@ -1,12 +1,12 @@
 # java-study
 
-21/01/01
+22/01/01
 
 repo 제작
 
 
 
-21/01/02
+22/01/02
 
 자바 기초 프로그래밍 강좌 1강 - Hello World!
 
@@ -71,7 +71,7 @@ static - 하나의 class에서 공유하는 자원
 
 
 
-21/01/08
+22/01/08
 
 자바 기초 프로그래밍 강좌 3강 - 자료형(Data Type)
 
@@ -154,7 +154,7 @@ if while for
 - String
 
   - 		// 자바는 String을 비교할 때 equals()을 이용한다.
-    		// 그 이유는 String은 다른 자료형과 다른 문자열 자료형이기 때문
+      		// 그 이유는 String은 다른 자료형과 다른 문자열 자료형이기 때문
 
   - a.equals()
 
@@ -206,26 +206,32 @@ if while for
 - 끝난 후 sc.close()로 안정성을 키워줌
 
 - 		File file = new File ("input.txt");
-  		Scanner sc = new Scanner(file);
+    		Scanner sc = new Scanner(file);
 
   - 빨간 줄은 input.txt 없을 때 예외 사항 없어서임
     - catch/try 사용하면 됨
 
 - 		File file = new File ("input.txt");
-  		try {
-  			Scanner sc = new Scanner(file);
-  			while(sc.hasNextInt()) {
-  				System.out.println(sc.nextInt() * 100);
-  			}
-  			sc.close();
-  		} catch (FileNotFoundException e) {
-  			System.out.println("파일을 읽어오는 도중에 오류 발생");
-  		}
+    		try {
+    			Scanner sc = new Scanner(file);
+    			while(sc.hasNextInt()) {
+    				System.out.println(sc.nextInt() * 100);
+    			}
+    			sc.close();
+    		} catch (FileNotFoundException e) {
+    			System.out.println("파일을 읽어오는 도중에 오류 발생");
+    		}
 
   - hasNextInt()
     - 다음에 읽어올 정수가 있는지 확인
 
 - Scanner로 문자열을 입력 받고 싶을 때에는 `next()` 함수와 `nextLine()`를 사용
+
+
+
+22/01/24
+
+.gitignore Windows VisualStudioCode Eclipse
 
 
 
